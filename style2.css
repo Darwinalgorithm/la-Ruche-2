@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+font-family: "Inter", sans-Serif;
+}
+
+header {
+
+background-color: white;
+padding: 5px 15px;
+}
+
+a {text-decoration: none; color: black;}
+
+
+.flex {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.spaceBetween {
+
+justify-content: space-between;
+
+}
+
+li {
+list-style: none;
+
+}
+
+.navheader {
+
+width: 50%;
+
+}
+
+.alignCenter {
+align-items: center;
+
+}
+
+.panier {
+color: yellow;
+
+}
+
+/*DEBUT DU HERO*/
+.bgYellow {
+background-color: #F3C827;
+
+}
+
+.hero {
+    height: 100vh;
+}
+
+.container {
+   /* background-color: red */
+    max-width: 1000px; 
+    width: 100%;
+    margin:auto; 
+    display: flex; /*j'ajoute pour voir*/
+}
+
+.hero h2 {
+
+    font-family: "WindSong", cursive;
+    font-size: 130px;
+    font-size weight: 500px;
+}
+
+.btn { 
+background-color: #F66909;
+border: 10px;
+border-radius: 4px;
+padding: 10px;
+color:white;
+display:inline-block;
+margin-top: 15px;
+width: fit-content;
+
+
+/*ENGAGEMENT*/
+
+.enga {
+
+
+
+}
+
+}
+
+body {
+   
+
+
+} /*deux BG le body l'emporte*/
+
+.bold {font-weight: 600;}
+
+h1 {
+
+
+}
+
+h2 {
+
+
+}
+
+
+h3 {
+
+
+}
+
+footer {
+
+
+}
+
