@@ -1,10 +1,41 @@
+
+/*POLICE*/
+
 @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
 
+/*SP2CIFICATIONS UNIVERSELLES*/
 * {
-margin: 0;
+margin:0 ;
 padding: 0;
 font-family: "Inter", sans-Serif;
 }
+
+
+/*LES TITRES*/
+
+h1 {
+
+
+}
+
+h2 {
+
+
+}
+
+
+h3 {
+width: 100%;
+margin: auto;
+}
+
+h4 {
+    width: 100%;
+    margin: auto;
+
+}
+
+/*LE HEADER*/
 
 header {
 
@@ -14,16 +45,50 @@ padding: 5px 15px;
 
 a {text-decoration: none; color: black;}
 
+/*                                    CLASSES FONCTIONS           */
+
+/*LA FAMEUSE CATEGORIE DU FLEX / 
+(1) ON PARLE AU PAPA ET (2) ON PREND EN COMPTE LA LARGEUR DES ENFANTS*/
 
 .flex {
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
-}
+ /*<-- j'ai ajouté margin auto, sans effet*/
+} /*c'est dingue, j'ai ajoute space between ici et la fonction s'annule, pourquoi ?*/
+
+.alignCenter {
+    align-items: center;
+    
+    }
 
 .spaceBetween {
 
 justify-content: space-between;
+
+}
+
+
+
+/*                        CLASSES CONTENANTS            */
+
+.lar45 {
+width: 45%;
+
+}
+
+.lar100 {
+
+    width: 100%;
+
+}
+
+.lar30 {
+    width: 25%;
+    margin: auto; /*en trop ? non c'est bon*/
+}
+.Marginleft {
+
+    margin-left: 100px;
 
 }
 
@@ -38,10 +103,6 @@ width: 50%;
 
 }
 
-.alignCenter {
-align-items: center;
-
-}
 
 .panier {
 color: yellow;
@@ -60,17 +121,18 @@ background-color: #F3C827;
 
 .container {
    /* background-color: red */
+   /*j'ajoute pour voir*/
     max-width: 1000px; 
     width: 100%;
     margin:auto; 
-    display: flex; /*j'ajoute pour voir*/
+
 }
 
 .hero h2 {
 
     font-family: "WindSong", cursive;
     font-size: 130px;
-    font-size weight: 500px;
+    font-size: 64px;
 }
 
 .btn { 
@@ -83,40 +145,32 @@ display:inline-block;
 margin-top: 15px;
 width: fit-content;
 
+}
+
+
+.btn2 {
+
+    background-color: #F66909;
+    border: 10px;
+    border-radius: 4px;
+    padding: 10px;
+    color:white;
+    display:block;
+    margin-top: 15px;
+    width: fit-content;
+
+}
 
 /*ENGAGEMENT*/
 
-.enga {
-
-
-
-}
-
-}
-
-body {
-   
-
-
-} /*deux BG le body l'emporte*/
+ /*deux BG le body l'emporte*/
 
 .bold {font-weight: 600;}
 
-h1 {
 
 
-}
-
-h2 {
 
 
-}
-
-
-h3 {
-
-
-}
 
 footer {
 
