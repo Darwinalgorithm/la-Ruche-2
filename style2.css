@@ -19,18 +19,23 @@ h1 {
 }
 
 h2 {
-
-
+font-size: 42px;
+font-weight: 800;
+padding: 20px;
 }
 
 
 h3 {
+  font-weight: 600;
+  font-size: 32px;
 width: 100%;
 margin: auto;
+padding:25px;
 }
 
 h4 {
-    width: 100%;
+   font-weight: 400; 
+   font-size: 18px;
     margin: auto;
 
 }
@@ -127,6 +132,10 @@ margin-bottom: 30px;
 
 }
 
+.paddingsection {
+    padding: 35px;
+}
+
 .hero {
     height: 100vh;
 }
@@ -136,7 +145,11 @@ margin-bottom: 30px;
    /*j'ajoute pour voir*/
     max-width: 1000px; 
     width: 100%;
-    margin:auto; 
+    margin:auto; /*cela centre au milieu du parent*/
+
+}
+.alignfe {
+align-items: flex-end;
 
 }
 
@@ -144,7 +157,7 @@ margin-bottom: 30px;
 
     font-family: "WindSong", cursive;
     font-size: 130px;
-    font-size: 64px;
+    font-weight: 500;
 }
 
 .btn { 
@@ -154,7 +167,7 @@ border-radius: 4px;
 padding: 10px;
 color:white;
 display:inline-block;
-margin-top: 15px;
+margin-top: 35px;
 width: fit-content;
 
 }
@@ -182,8 +195,13 @@ width: fit-content;
 
 
 
+/* ADRESSE*/
 
+.width70 {
 
+    width: 70%;
+
+}
 
 footer {
 
