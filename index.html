@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
 </head>
 
-<!-- antho m'aide activement 
+<!-- Rmq antho m'a aidé, trop de retard à un moment 
  REMARQUE Générale : je m'adresse trop aux classes supérieures croyant que l'ordre va descendre, cela ne va pas :
  partir des enfants, ce qu'il doivent faire et monter ensuite : bottom-up et surtout des titres 
- pour mettre de la clarté et surtout crtr+ pour zoomer, je ne vois rien-->
+ pour mettre de la clarté et surtout crtr+ pour zoomer, je ne vois rien, revoir la logique aussi
+ je commence quand même, en fin de journée... à comprendre-->
 
 <body>
     <header class="flex spaceBetween alignCenter">
@@ -37,7 +38,7 @@
         <a href="panier"><i class="fa-solid fa-cart-plus"></i></a>
     </header>
 
-    <!-- Section 1 ou hero on les appelle les hoeros pour accrocher l'oeil du visiteur-->
+    <!-- Section 1 ou hero on les appelle les heros pour accrocher l'oeil du visiteur-->
 
     <section class="bgYellow hero flex alignCenter paddingsection">
 
@@ -53,13 +54,13 @@
         </div>
     </section>
 
-    <!-- Section des engagements -->
+    <!-- Section des E N G A G E M E N T S -->
 
     <section class="flex spaceBetween container paddingsection">
 
         <h3 class="lar100">Engagement</h3>
 
-        
+
         <p class="lar45">Au cœur d'une vocation dédiée à la préservation de l'équilibre naturel, notre apiculteur
             incarne une
             passion
@@ -81,49 +82,59 @@
 
     </section>
 
-    <!-- ENGAGEMENT  -->
 
 
-<!-- Ici ce n'est pas aligné sur Engagement, il me faut une margin left -->
-    <section class="flex spaceBetween justcenter alignCenter bgYellow paddingsection"> <!-- il me manquait le largeur 100on met rien dans les section, les sections rangent les div et on met les classes dans les div -->
+    <!-- Ici ce n'est pas aligné sur Engagement, il me faut une margin left ou une div !-->
+    <section class="flex spaceBetween justcenter alignCenter bgYellow paddingsection">
+        <!-- il me manquait le largeur 100 on met rien dans les section, les sections rangent les div et on met les classes dans les div -->
+        <div class="container">
         <h3 class="lar100">Bienfaits du miel</h3>
-        <div class="lar30 flex spaceBetween">
+<div class=" flex spaceBetween">
+        <div class="lar30"> <!-- 1er enfant largeur suffit ! -->
             <h4>Antioxydants naturels</h4>
             <p>Le miel est riche en antioxydants, tels que les flavonoïdes, qui aident à neutraliser les radicaux libres
                 dans le corps, contribuant ainsi à la prévention du vieillissement prématuré et de certaines maladies.
             </p>
         </div>
-        <div class="lar30 flex spaceBetween">
+        <div class="lar30"> <!-- 2m enfant largeur suffit ! -->
             <h4>Propriétés antibactériennes et antiseptiques</h4>
             <p>
                 Le miel possède des propriétés antibactériennes naturelles qui peuvent aider à lutter contre les
                 infections et accélérer le processus de guérison des plaies</p>
         </div>
-        <div class="lar30 flex spaceBetween">
+        <div class="lar30"> <!-- largeur suffit ! -->
             <h4>Soulagement de la toux</h4>
             <p>Le miel est souvent utilisé comme remède naturel pour apaiser la gorge irritée et soulager la toux. Il
                 peut être particulièrement efficace lorsqu'il est mélangé à de l'eau chaude ou à des infusions.</p>
-                </div>
-                <div class="flex container spaceBetween">
-                <a href="" class="btn">En savoir plus sur les bienfaits du miel</a>
-                <!-- PB j'ai traffiqué et je suis arrivé à mettre le bouton en bas avec une div et un background yelle mais il y avait 
+        </div>
+    </div>
+        <div class="flex container spaceBetween">
+            <a href="" class="btn">En savoir plus sur les bienfaits du miel</a>
+            <!-- PB j'ai traffiqué et je suis arrivé à mettre le bouton en bas avec une div et un background yelle mais il y avait 
                  une séaparation blanche donc je laisse ainsi pour l'instant, avec le boutton à droire... à revoir j'ai aussi crée un boutton 2 
-                 pour régler le pb du background, à revoir --> 
-                 <!-- autr pb j'avais ajouté une div -->
-            </div>
-      
+                 pour régler le pb du background, à revoir -->
+            <!-- autr pb j'avais ajouté une div -->
+            <!-- mon pb général : accepter qu'on utilise des classes <div> comme de simples fonctions à l'application souvent très très locale
+                comme une simple mise en forme générale certes, mais surtout aussi locale -->
+        </div>
+        </div>
     </section>
-    
-   
-   
-<!--      PRODUITS -->
+
+
+
+    <!--      PRODUITS -->
 
     <section class="flex spaceBetween paddingsection">
+        <div class=" flex container spaceBetween"> <!-- refaire le même procès qu'avant, diminuer les class, regrouper les contenus avec container
+            dingue je parlais au GP au lieu des parents... -->
         <h3>Produits</h3>
         <div class="lar30 marchet">
             <img src="./assets/produit1.png" alt="miel de chataigner">
-            <h4>Miel de chataigner</h4>
-            <p>Le Miel de châtaignier tonifiant, connaît un regain de popularité avec son goût …</p>
+            <div class="mar10"> <!-- pour mettre du margin -->
+                <h4>Miel de chataigner</h4>
+                <p>Le Miel de châtaignier tonifiant, connaît un regain de popularité avec son goût …</p>
+            </div>
+
             <a href="" class="btn">
                 <img src="./assets/panier-blanc.png" alt="Panier blanc">
                 Ajouter au panier
@@ -131,69 +142,82 @@
         </div>
         <div class="lar30 marchet">
             <img src="./assets/produit2.png" alt="Pain au miel">
-            <h4>Pain au miel</h4>
-            <p>Le pain au miel est une recette au goût inégalé, fort d'un ancien savoir faire…</p>
-            <a href=""class="btn">
+
+            <div class="mar10">
+                <h4>Pain au miel</h4>
+                <p>Le pain au miel est une recette au goût inégalé, fort d'un ancien savoir faire…</p>
+            </div>
+
+            <a href="" class="btn">
                 <img src="./assets/panier-blanc.png" alt="">
                 Ajouter au panier
             </a>
         </div>
         <div class="lar30 marchet">
             <img src="assets/produit3.png" alt="Figues confites">
-            <h4>Figues confites</h4>
-            <p>La figue se marie à merveille à la douceur du miel pour faire revenir vos plates…</p>
-            <a href=""class="btn">
+            <div class="mar10">
+                <h4>Figues confites</h4>
+                <p>La figue se marie à merveille à la douceur du miel pour faire revenir vos plates…</p>
+            </div>
+
+            <a href="" class="btn">
                 <img src="./assets/panier-blanc.png" alt="">
                 Ajouter au panier
             </a>
         </div>
+    </div>
     </section>
 
-    <!-- LES COMMENTAIRES -->
+    <!-- LES COMMENTAIRES --> <!-- reprendre ici ! aligner -->
     <section class="bgYellow paddingsection">
-<h3 class="lar100">Nos Clients</h3>
-    <section class="flex spaceBetween container alignCenter lar100 bgYellow justcenter">
-        <div class="justcenter lar30">
-            <img src="./assets/isabelle.png" alt="">
-            
-<p>Isabelle B</p>
-            <div> ★★★★☆</div>
-            <p>La Ruche offre un miel de très bonne qualité, avec un goût authentique qui rappelle vraiment le
-                savoir-faire artisanal. Les emballages sont soignés, et j'apprécie le côté local de cette entreprise</p>
-        </div>
-        <div class="justcenter lar30">
-            <img src="./assets/jean-luc.png" alt="">
-            <p>Jean Luc D.</p>
-            <div> ★★★★☆</div>
-            <p>La Ruche offre un miel de très bonne qualité, avec un goût authentique qui rappelle vraiment le
-                savoir-faire artisanal. Les emballages sont soignés, et j'apprécie le côté local de cette entreprise.
-            </p>
-        </div>
-        <div class="justcenter lar30">
-            <img src="./assets/marie.png" alt="">
-            <p>Marie G.</p>
-            <div> ★★★★★</div>
-            <p>La Ruche offre un miel de très bonne qualité, avec un goût authentique qui rappelle vraiment le
-                savoir-faire artisanal. Les emballages sont soignés, et j'apprécie le côté local de cette entreprise</p>
+        <div class="container spaceBetween alignCenter">
+        <h3 class="lar100">Nos Clients</h3>
+        <section class="flex spaceBetween container alignCenter lar100 justcenter">
+            <div class="justcenter lar30">
+                <img src="./assets/isabelle.png" alt="">
+
+                <p>Isabelle B</p>
+                <div> ★★★★☆</div>
+                <p>La Ruche offre un miel de très bonne qualité, avec un goût authentique qui rappelle vraiment le
+                    savoir-faire artisanal. Les emballages sont soignés, et j'apprécie le côté local de cette entreprise
+                </p>
+            </div>
+            <div class="justcenter lar30">
+                <img src="./assets/jean-luc.png" alt="">
+                <p>Jean Luc D.</p>
+                <div> ★★★★☆</div>
+                <p>La Ruche offre un miel de très bonne qualité, avec un goût authentique qui rappelle vraiment le
+                    savoir-faire artisanal. Les emballages sont soignés, et j'apprécie le côté local de cette
+                    entreprise.
+                </p>
+            </div>
+            <div class="justcenter lar30">
+                <img src="./assets/marie.png" alt="">
+                <p>Marie G.</p>
+                <div> ★★★★★</div>
+                <p>La Ruche offre un miel de très bonne qualité, avec un goût authentique qui rappelle vraiment le
+                    savoir-faire artisanal. Les emballages sont soignés, et j'apprécie le côté local de cette entreprise
+                </p>
+            </div>
         </div>
         </section>
     </section>
     <section class="paddingsection">
         <h3>Nous trouver</h3>
         <!-- carte -->
-         <div class="width70">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.1974981478093!2d4.356613975449251!3d45.40535683736415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5aee28ef51b4b%3A0xc80903a95d39c929!2s12%20Rue%20Jean-Pierre%20Blachier%2C%2042150%20La%20Ricamarie!5e0!3m2!1sfr!2sfr!4v1730710434453!5m2!1sfr!2sfr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <address>
-            <p>La ruche</p>
-            <p>15 rue Jean-Pierre Blachier</p>
-            <p>42520 Maclas</p>
-        </address>
-       </div>
+        <div class="width70">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.1974981478093!2d4.356613975449251!3d45.40535683736415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5aee28ef51b4b%3A0xc80903a95d39c929!2s12%20Rue%20Jean-Pierre%20Blachier%2C%2042150%20La%20Ricamarie!5e0!3m2!1sfr!2sfr!4v1730710434453!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <address>
+                <p>La ruche</p>
+                <p>15 rue Jean-Pierre Blachier</p>
+                <p>42520 Maclas</p>
+            </address>
+        </div>
     </section>
-    <footer  class="bgYellow">
+    <footer class="bgYellow">
         <div>
             <h3>Contactez nous</h3>
             <a href="tel:+"></a>
@@ -209,11 +233,11 @@
         </div>
         <div>
             <h3>Réseaux</h3>
-            <a href="">
-                <img src="./assets/fb.png" alt="">
+            <a href="https://www.facebook.com/?locale=fr_FR/">
+                <img src="./assets/fb.png" alt="lien facebook">
             </a>
-            <a href="">
-                <img src="./assets/insta.png" alt="">
+            <a href="https://www.instagram.com/">
+                <img src="./assets/insta.png" alt="lien instagram">
             </a>
         </div>
         <div>
