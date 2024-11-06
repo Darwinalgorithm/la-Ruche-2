@@ -114,6 +114,18 @@ color: yellow;
 background-color: #F3C827;
 
 }
+.justcenter {
+justify-content: center;
+
+}
+
+.marchet {
+
+background-color: #F3C827;
+width: 267px;
+margin-bottom: 30px;
+
+}
 
 .hero {
     height: 100vh;
@@ -147,6 +159,7 @@ width: fit-content;
 
 }
 
+/*inutile en dessous ?*/
 
 .btn2 {
 
